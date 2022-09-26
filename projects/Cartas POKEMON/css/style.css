@@ -1,0 +1,548 @@
+*{
+    margin: 0 auto;
+    
+}
+
+body{
+    font-family: "Poppins","arial";
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.boton{
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    /* padding: rem; */
+    border-radius: 100%;
+    text-align: center;
+    color: #000;
+    transition: .3s color;
+}
+
+
+.boton i{
+    font-size: 1.5rem;
+    margin-top: 11px;
+}
+
+.home{
+    margin-top: -5rem;
+    margin-left: 1rem;
+}
+
+.prev{
+    left: -25px;
+    top: calc((500px / 2) - 25px);
+    /* font-size: 1.8rem; */
+}
+
+.next{
+    right: -25px;
+    top: calc((500px / 2) - 25px);
+    /* font-size: 1.8rem; */
+}
+
+.body__home{
+    padding: 0;
+    background-color: rgb(228, 148, 0);
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.body__home section{
+    padding: 2rem 2rem 0rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: max-content max-content;
+    gap: 1rem;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.title{
+     width: 100%; 
+    text-align: left;
+    padding: 0rem 0rem 0rem 3rem;
+    
+} 
+
+ .title__h2{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 5rem;
+} 
+
+.img__pokeball{
+    width: 60px;
+    float: left;
+}
+
+.box__card{
+    border-radius: 20px;
+    position: relative;
+    background-color:rgba(206, 206, 206, 0.267);
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    display: block;
+    background-position: center;
+    background-size: 100%;
+    padding: 1rem;
+    transition: .3s all;
+}
+
+.box__span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: .3s all;
+}
+
+.box__card:hover{
+    background-color: rgba(66, 66, 66, 0.2);
+    background-size: 105%;
+}
+
+.box__card:hover > .box__span{
+    font-size: 1.3rem;
+}
+
+
+
+.bg-bulbasaur{
+    background: linear-gradient(to left, #01c478, #5aa8cc);
+
+}
+
+.bg-bulbasaur .boton:hover{
+    color: #01c478;
+}
+
+.bg-chameleon{
+    background: linear-gradient(to left, #c63f3c, #f88123);
+}
+
+.bg-chameleon .boton:hover{
+    color: #c63f3c;
+}
+
+.bg-squirtle{
+    background: linear-gradient(to right, #3d77c7,#24f1f6);
+}
+
+.bg-squirtle .boton:hover{
+    color: #3d77c7;
+}
+
+.bg-metapod{
+    background: linear-gradient(to top, #4ed26d, #0ade31);
+}
+
+.bg-metapod .boton:hover{
+    color: #4ed26d;
+}
+
+.bg-pidgey{
+    background: linear-gradient(to top, #d18b35, #954d12);
+}
+
+.bg-pidgey .boton:hover{
+    color: #d18b35;
+}
+
+.bg-abrok{
+    background: linear-gradient(to bottom, #b66272, #764c96);
+}
+
+.bg-abrok .boton:hover{
+    color: #b66272;
+}
+
+.bg-pikachu{
+    background: linear-gradient(to right, #ffa800, #ffd200);
+}
+
+.bg-pikachu .boton:hover{
+    color: #ffa800;
+}
+
+.bg-jigglypuff{
+    background: linear-gradient(to bottom, #ff55a4, #ee93a4);
+}
+
+.bg-jigglypuff .boton:hover{
+    color: #ff55a4;
+}
+
+.bg-psicoduck{
+    background: linear-gradient(to left, #ffc935, #ffec8d);
+}
+
+.bg-psicoduck .boton:hover{
+    color: #ffc935;
+}
+
+.bg-mewtwo{
+    background: linear-gradient(to bottom, #80c0fd, #d05bd1);
+}
+
+.bg-mewtwo .boton:hover{
+    color: #80c0fd;
+}
+
+.card{
+    width: 800px;
+    height: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.card img.poke{
+    position: absolute;
+    width: 100px;
+    top: 420px;
+    left: -30px;
+}
+
+.box{
+    width: calc(100% / 2);
+    min-height: 300px;
+    float: left;
+    margin: 0;
+    min-height: calc(500px - 6rem);
+    box-sizing: border-box;
+}
+
+article.box{
+    border-left: 1rem solid white;  
+    text-align: center;
+}
+
+figure.box{
+    border-radius: 10px;
+    
+}
+
+.bg-bulbasaur figure{
+    background-image: url(./../img/001.png), linear-gradient(to left, #01c478, #5aa8cc);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-bulbasaur article h2{
+    font-size: 2rem;
+}
+
+.bg-bulbasaur article h2 span{
+    color: #01c478;
+    text-transform: uppercase;
+
+}
+
+.bg-chameleon figure{
+    background-image: url(./../img/005.png), linear-gradient(to top, #c63f3c, #f88123);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-chameleon article h2{
+    font-size: 2rem;
+}
+
+.bg-chameleon article h2 span{
+    color: #c63f3c;
+    text-transform: uppercase;
+
+}
+
+.bg-squirtle figure{
+    background-image: url(./../img/007.png), linear-gradient(to top, #3d77c7, #24f1f6);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-squirtle article h2{
+    font-size: 2rem;
+}
+
+.bg-squirtle article h2 span{
+    color: #3d77c7;
+    text-transform: uppercase;
+
+}
+
+.bg-metapod figure{
+    background-image: url(./../img/011.png), linear-gradient(to bottom, #4ed26d, #0ade31);;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-metapod article h2{
+    font-size: 2rem;
+}
+
+.bg-metapod article h2 span{
+    color: #0ade31;
+    text-transform: uppercase;
+}
+
+.bg-pidgey figure{
+    background-image: url(./../img/016.png), linear-gradient(to top, #d18b35, #954d12);;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-pidgey article h2{
+    font-size: 2rem;
+}
+
+.bg-pidgey article h2 span{
+    color: #d18b35;
+    text-transform: uppercase;
+}
+
+.bg-abrok figure{
+    background-image: url(./../img/024.png), linear-gradient(to top, #b66272, #764c96);;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-abrok article h2{
+    font-size: 2rem;
+}
+
+.bg-abrok article h2 span{
+    color: #764c96;
+    text-transform: uppercase;
+}
+
+.bg-pikachu figure{
+    background-image: url(./../img/025.png), linear-gradient(to bottom, #ffa800, #ffd200);;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-pikachu article h2{
+    font-size: 2rem;
+}
+
+.bg-pikachu article h2 span{
+    color: #ffa800;
+    text-transform: uppercase;
+}
+
+.bg-jigglypuff figure{
+    background-image: url(./../img/039.png), linear-gradient(to top, #ff55a4, #ee93a4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-jigglypuff article h2{
+    font-size: 2rem;
+}
+
+.bg-jigglypuff article h2 span{
+    color: #ee93a4;
+    text-transform: uppercase;
+}
+
+.bg-psicoduck figure{
+    background-image: url(./../img/054.png), linear-gradient(to top, #ffc935, #ffec8d);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-psicoduck article h2{
+    font-size: 2rem;
+}
+
+.bg-psicoduck article h2 span{
+    color: #ffc935;
+    text-transform: uppercase;
+}
+
+.bg-mewtwo figure{
+    background-image: url(./../img/150.png), linear-gradient(to top, #80c0fd, #d05bd1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.bg-mewtwo article h2{
+    font-size: 2rem;
+}
+
+.bg-mewtwo article h2 span{
+    color: #d05bd1;
+    text-transform: uppercase;
+}
+
+p{
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.bg-jigglypuff p{
+    letter-spacing: 0.8px;
+    font-size: 1.2rem;
+}
+
+.bg-psicoduck p{
+    font-size: 1.2rem;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #e9e9e9;
+    padding: .5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bg-squirtle ul{
+    margin-top: 4.5rem;
+}
+
+.bg-metapod ul{
+    margin-top: 1.5rem;
+}
+
+.bg-pidgey ul{
+    margin-top: 4.5rem;
+}
+
+.bg-jigglypuff ul{
+    margin-top: 1.5rem;
+}
+
+.bg-psicoduck ul{
+    margin-top: 1.5rem;
+    
+}
+
+ul li{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: .5rem;
+    display: block;
+    padding: .5rem;
+}
+
+.bg-bulbasaur li.last{
+    background-color: #01c478;
+}
+
+.bg-bulbasaur ul li.last span{
+    color: white;
+}
+
+.bg-chameleon li.last{
+    background-color: #f88123;
+}
+
+.bg-chameleon ul li.last span{
+    color: white;
+}
+
+.bg-squirtle li.last{
+    background-color: #24f1f6;
+}
+
+.bg-squirtle ul li.last span{
+    color: white;
+}
+
+.bg-metapod li.last{
+    background-color: #0ade31;
+}
+
+.bg-metapod ul li.last span{
+    color: white;
+}
+
+.bg-pidgey li.last{
+    background-color: #954d12;
+}
+
+.bg-pidgey ul li.last span{
+    color: white;
+}
+
+.bg-abrok li.last{
+    background-color: #764c96;
+}
+
+.bg-abrok ul li.last span{
+    color: white;
+}
+
+.bg-pikachu li.last{
+    background-color: #ffd200;
+}
+
+.bg-pikachu ul li.last span{
+    color: white;
+}
+
+.bg-jigglypuff li.last{
+    background-color: #ff55a4;
+}
+
+.bg-jigglypuff ul li.last span{
+    color: white;
+}
+
+.bg-psicoduck li.last{
+    background-color: #2390f7;
+}
+
+.bg-psicoduck ul li.last span{
+    color: white;
+}
+
+.bg-mewtwo li.last{
+    background-color: #d059cf;
+}
+
+.bg-mewtwo ul li.last span{
+    color: white;
+}
+
+
+

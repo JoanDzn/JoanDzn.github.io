@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.height{
+    max-width: 1024px;
+}
+
+.Limit{
+    margin: 0 auto ;
+}
+
+.mainNav{
+    background-color: #333;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.mainNav ul{
+    list-style-type: none ;
+    margin: 0;
+}
+
+.mainNav ul li a{
+    float: left;
+} 
+
+.mainNav ul li a{
+    text-decoration: none;
+    color:white;
+    padding: .5rem 1rem;
+    margin: 1rem .5rem;
+    display: block;
+}
+
+.mainNav ul li a:hover, .active{
+    color: #00a8ec;
+    background-color: black;
+    border-radius: 7px;
+}
+
+.mainNav img{
+    width: 70px;
+    float: right;
+}
+
+.mainHeader{
+    margin-top: 70px;
+    height: 600px;
+    background-color: dimgray;
+    background-blend-mode: multiply;
+    background-image: url(./../img/img01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.mainHeader h1{
+    color:white;
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    text-shadow: 5px 5px 4px black;
+
+}
+
+.mainHeader h1 span{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.mainHeader h1 span:nth-child(2){
+    text-transform: capitalize;
+    font-size: 4rem;
+}
+
+.mainContainer{
+    background-color: #664330;
+    min-height: 600px;
+}
+
+.primer-error{
+    padding: 1rem;
+}
+
+.mainContainer .childBox{
+    padding: 1rem;
+    background-color: white;
+    min-height: 220px;
+    box-sizing: border-box;    
+    width: calc( (100% / 3) - 1rem );
+    float: left;
+}
+
+.mainContainer  .childBox.second{
+    margin:0 1.1rem;
+    background-image: url(./../img/img02.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.mainContainer .childBox h2{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: solid #ccc 5px;
+}
+.mainContainer .childBox p{
+    letter-spacing: 1px;
+    text-align: start;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.mainContainer .segundo-error{
+    padding: 1rem;
+    min-height: 200px;
+}
+
+.mainContainer .childBox2{
+    padding: 1rem;
+    background-color: white;
+    min-height: 220px;
+    box-sizing: border-box;    
+    width: calc( (100% / 2) - 1rem );
+    float: left;
+    margin-top: 1rem;
+}
+
+.mainContainer .segundo-error figure.childBox2{
+    margin-right: 1rem;
+    background-image: url(./../img/img03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.mainContainer .childBox2 h2{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: solid #ccc 5px;
+}
+.mainContainer .childBox2 p{
+    letter-spacing: 1px;
+    text-align: start;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.boton{
+    padding: 1rem 2rem;
+    display: block;
+    background-color: #02a1e3;
+    position: absolute;
+    right: 1rem;
+    bottom: -3rem;
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.mainFooter{
+    background-color: #333;
+    position: relative;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.mainFooter img{
+    width: 70px;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+.mainFooter p{
+    color: white;
+}
+
+.mainFooter p span{
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1rem;
+}
